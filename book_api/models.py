@@ -2,6 +2,10 @@ from django.db import models
 
 
 # Create your models here.
+from author_api.models import Author
+from category_api.models import Category
+
+
 class Book(models.Model):
     title = models.CharField(max_length=255)
     number_of_pages = models.IntegerField()
